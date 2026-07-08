@@ -1,0 +1,124 @@
+# AI Collaboration Operating System
+
+[中文 README](README.md)
+
+An early-stage, lightweight AI collaboration skill experiment.
+
+This is not a finished product, and it is not a finalized engineering methodology. For now, it is closer to a starting point: a reusable, portable, and intentionally restrained skill that helps small projects, practice projects, startup teams, hackathon work, and early products build basic collaboration habits with AI.
+
+## What This Is
+
+This repository currently contains one minimal skill:
+
+```txt
+skills/
+  project-collaboration-operating-system/
+    SKILL.md
+```
+
+The skill helps a project answer early collaboration questions: what should an AI agent read first, which documents are authoritative, when should engineering scope not expand, what evidence proves a task is done, and how should humans and AI correct course when collaboration drifts.
+
+The specific rules and usage details live in [`SKILL.md`](skills/project-collaboration-operating-system/SKILL.md). This README is not trying to repeat them. It is here to explain why the project exists and how we hope it can grow with contributors.
+
+## What It Can Help With Today
+
+Even though the current version is only one `SKILL.md`, it can already be used as an initializer for a project's collaboration system. It is especially useful for:
+
+- Organizing documentation collaboration: separating formal rules from drafts, audits, screenshots, and temporary plans.
+- Creating an AI entrypoint for a project: helping agents find authoritative context instead of editing after reading only the README.
+- Controlling early engineering scope: reminding teams not to add databases, auth, CI, test frameworks, AI services, or other infrastructure before the project stage calls for them.
+- Checking user-visible behavior: avoiding UI copy such as "saved", "submitted", or "done" when there is no state, service, API, or persistence path behind it.
+- Supporting retrospectives and correction loops: when collaboration drifts, classifying whether the issue was an execution miss, documentation ambiguity, context discovery failure, or a missing process.
+- Preventing documentation drift: when the same rule appears in multiple places, helping the team find the real source of truth before old guidance silently becomes wrong.
+
+These capabilities are still early, but they are not just abstract ideas. They come from recurring problems in real projects: AI agents reading the wrong context, collaborators interpreting rules differently, guidance scattered across files, unclear completion standards, and retrospectives that stop at "be more careful next time."
+
+## Why We Are Building It
+
+Many mature teams and large companies already have stable AI collaboration flows, documentation systems, and engineering practices. Those practices are valuable and worth learning from.
+
+But they are often tightly coupled to complete projects: code structure, testing systems, PR workflows, platform engineering, organizational memory, internal tools, and collaboration habits that evolved over time. For many small projects, knowing those systems are good is very different from being able to migrate them.
+
+Most early projects also do not need heavy engineering process on day one. Practice projects, course projects, hackathon prototypes, and early startup products often need a lighter starting point: protect against the most common collaboration failures first, then add more formal rules, templates, scripts, and workflows as the project becomes more complex.
+
+So this project is not asking, "How do we create the most complete engineering system from the beginning?" It is asking:
+
+- How can AI collaboration rules grow from light to mature?
+- How can documentation help teams act instead of becoming a burden?
+- How can a skill be copied across projects instead of being permanently tied to one codebase?
+- How can people without deep professional engineering experience participate more easily in building with AI?
+
+## Where The First Version Came From
+
+The first version of this skill came from a very concrete collaboration experience. The author previously worked on a hackathon project with many non-technical collaborators, while also needing to align project context across the agents used by different teammates.
+
+The problem was not only "how do we make one AI write code?" It was "how do a group of humans and a group of AI agents keep aligning over time?" Which document is authoritative? Which idea is still only a draft? Which capability should not be built yet? How do we verify locally? How do we review mistakes? How can one collaborator's agent understand the rules already discovered by another collaborator's agent?
+
+To make that project work, the author built an ad hoc documentation collaboration system, retrospective habit, and local testing routine. Later, it became clear that this method should not stay trapped inside one project, and should not have to be explained from scratch every time. This skill is an attempt to turn it into something lighter and more portable.
+
+## What We Believe
+
+We believe that in the AI era, writing code and building projects should not belong only to professional engineers. Anyone curious about technology should have a lower-cost way to start creating, experimenting, and organizing their ideas.
+
+At the same time, collaborative projects still need some order. Creative freedom does not mean having no boundaries. Lightweight does not mean careless. Early-stage does not mean there is no need to reflect and improve.
+
+Good engineering process should grow gradually: serve collaboration first, then scale; solve real problems first, then add more tools. It should help a team act more clearly, not add ceremony just to look professional.
+
+## Current Status
+
+This is a very early concept version. The repository currently keeps the smallest possible structure so it is easy to copy, read, experiment with, and revise.
+
+Future versions may add:
+
+- `references`: deeper collaboration principles, failure patterns, and decision criteria.
+- `scripts`: lightweight checks for documentation drift, repeated rules, or collaboration risks.
+- `templates`: reusable collaboration notes, decision records, stage boundaries, and related project documents.
+- `examples`: real small-project usage cases, failure cases, and improvement stories.
+
+None of this is fixed yet. We would rather treat the project as an open experiment than pretend it is already complete.
+
+## What We Want To Explore Next
+
+This project could remain "just a lightweight skill." But the more interesting possibility is that it may grow into a shared collaboration language for small teams working with AI.
+
+We want to explore a few directions that are not fully formed yet, but feel worth thinking about together:
+
+- **Agent-to-agent collaboration**: future projects may not be one person working with one agent, but many people working with their own agents. How should those agents share context, hand off tasks, explain rules, and correct each other? What kind of collaboration protocol would they need?
+- **Portable collaboration memory**: when a project develops a documentation system, retrospective habit, or local verification routine, can those methods move to the next project? How do we migrate the method without copying a pile of files that do not fit the new context?
+- **Entry points for non-technical collaborators**: if someone does not write engineering rules but deeply understands product, content, design, operations, or real users, can they still help improve an AI collaboration system through experience, feedback, examples, and retrospectives?
+- **Progressive engineering for small projects**: we are not against engineering process. We are against process that arrives too early, too heavy, or only to look professional. A healthier path lets rules, scripts, templates, and verification grow as the project needs them.
+- **A library of real failure cases**: AI agents reading the wrong context, claiming completion without proof, retrospectives with no action, documentation drift, and agents misunderstanding each other are not only incidents. They can become reusable learning material.
+
+These ideas are still sketches, not promises and not a roadmap. They are invitations: if you have run into similar problems, maybe we can turn these blurry experiences into clearer, lighter, and more portable collaboration tools together.
+
+## Help Us Improve It
+
+If this direction interests you, contributions are very welcome.
+
+If you are an experienced developer, you can help us judge which collaboration rules are actually useful, which parts are too heavy, which parts are too abstract, and which designs do not transfer well across projects.
+
+If you do not have much engineering experience, your feedback is just as important. Try using AI to start or improve a project. Tell us what was confusing, what felt unusable, what made you more confident, and what still blocked you.
+
+You can also use this skill to initialize or improve your own project documentation system, run experiments, record rough edges, open issues, add examples, improve the writing, or simply star the project to show that this direction is worth continuing.
+
+## Getting Started
+
+If your AI tool supports skills, copy this directory into the relevant skills directory:
+
+```txt
+skills/project-collaboration-operating-system/
+```
+
+Then ask your agent to use the skill when you want to organize or improve a project's collaboration system, for example:
+
+```txt
+Use project-collaboration-operating-system to diagnose and improve this project's AI collaboration docs.
+```
+
+If your tool does not support skills yet, you can still read [`SKILL.md`](skills/project-collaboration-operating-system/SKILL.md) directly and use it as a lightweight collaboration-system checklist.
+
+## Star / Feedback / Contribute
+
+This project is still small and imperfect. What it needs most is not to be treated as a standard answer, but to be tested, questioned, modified, and extended in real projects.
+
+If you believe in this direction, please star it, share it, suggest improvements, or contribute directly. We hope it can slowly become a lighter, more practical, and more portable starting point for AI collaboration.
