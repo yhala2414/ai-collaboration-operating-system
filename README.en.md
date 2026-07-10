@@ -8,21 +8,23 @@ This is not a finished product, and it is not a finalized engineering methodolog
 
 ## 🧭 What This Is
 
-This repository currently contains one minimal skill:
+The core entrypoint of this repository is still a lightweight skill, but it has grown a small set of supporting materials beyond its original single-file shape:
 
 ```txt
 skills/
   project-collaboration-operating-system/
     SKILL.md
+    references/
+    templates/
 ```
 
 The skill helps a project answer early collaboration questions: what should an AI agent read first, which documents are authoritative, when should engineering scope not expand, what evidence proves a task is done, and how should humans and AI correct course when collaboration drifts.
 
-The specific rules and usage details live in [`SKILL.md`](skills/project-collaboration-operating-system/SKILL.md). This README is not trying to repeat them. It is here to explain why the project exists and how we hope it can grow with contributors.
+The specific rules and usage details live in [`SKILL.md`](skills/project-collaboration-operating-system/SKILL.md). `references/` and `templates/` only hold a few cases, pressure checks, and copyable invocation material. This README is not trying to repeat them. It is here to explain why the project exists and how we hope it can grow with contributors.
 
 ## 🛠️ What It Can Help With Today
 
-Even though the current version is only one `SKILL.md`, it can already be used as an initializer for a project's collaboration system. It is especially useful for:
+Even though the current version is still small, it can already be used as an initializer for a project's collaboration system. It is especially useful for:
 
 - 📚 Organizing documentation collaboration: separating formal rules from drafts, audits, screenshots, and temporary plans.
 - 🚪 Creating an AI entrypoint for a project: helping agents find authoritative context instead of editing after reading only the README.
@@ -56,6 +58,18 @@ The problem was not only "how do we make one AI write code?" It was "how do a gr
 
 To make that project work, the author built an ad hoc documentation collaboration system, retrospective habit, and local testing routine. Later, it became clear that this method should not stay trapped inside one project, and should not have to be explained from scratch every time. This skill is an attempt to turn it into something lighter and more portable.
 
+<table>
+  <tr>
+    <td>
+      <strong>🧩 A tiny sticker from a real project</strong>
+      <br><br>
+      <a href="https://github.com/yhala2414/tripkin">TripKin</a>
+      was one early practice source for this skill, but it is not the template and not the project this skill is tied to.
+      The goal is to extract portable methods from concrete projects, then let the skill work independently across contexts.
+    </td>
+  </tr>
+</table>
+
 ## 💡 What We Believe
 
 We believe that in the AI era, writing code and building projects should not belong only to professional engineers. Anyone curious about technology should have a lower-cost way to start creating, experimenting, and organizing their ideas.
@@ -66,13 +80,13 @@ Good engineering process should grow gradually: serve collaboration first, then 
 
 ## 🚧 Current Status
 
-This is a very early concept version. The repository currently keeps the smallest possible structure so it is easy to copy, read, experiment with, and revise.
+This is a very early concept version. The repository is still intentionally small: one core skill, plus a little reference material and invocation scaffolding, so it stays easy to copy, read, experiment with, and revise.
 
 Future versions may add:
 
-- `references`: deeper collaboration principles, failure patterns, and decision criteria.
+- `references`: more collaboration principles, failure patterns, decision criteria, and real-case pressure checks.
 - `scripts`: lightweight checks for documentation drift, repeated rules, or collaboration risks.
-- `templates`: reusable collaboration notes, decision records, stage boundaries, and related project documents.
+- `templates`: more reusable collaboration notes, decision records, stage boundaries, and related project documents.
 - `examples`: real small-project usage cases, failure cases, and improvement stories.
 
 None of this is fixed yet. We would rather treat the project as an open experiment than pretend it is already complete.
@@ -99,7 +113,7 @@ If you are an experienced developer, you can help us judge which collaboration r
 
 If you do not have much engineering experience, your feedback is just as important. Try using AI to start or improve a project. Tell us what was confusing, what felt unusable, what made you more confident, and what still blocked you.
 
-You can also use this skill to initialize or improve your own project documentation system, run experiments, record rough edges, open issues, add examples, improve the writing, or simply star the project to show that this direction is worth continuing.
+You can also use this skill to initialize or improve your own project documentation system, run experiments, bring back the rough edges from real projects, open issues, add examples, improve the writing, or simply star the project to show that this direction is worth continuing.
 
 ## 🚀 Getting Started
 
