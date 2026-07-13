@@ -22,6 +22,93 @@ The skill helps a project answer early collaboration questions: what should an A
 
 The specific rules and usage details live in [`SKILL.md`](skills/project-collaboration-operating-system/SKILL.md). `references/` and `templates/` only hold a few cases, pressure checks, and copyable invocation material. This README is not trying to repeat them. It is here to explain why the project exists and how we hope it can grow with contributors.
 
+## 🚀 Quick Start
+
+This skill can create a minimal collaboration starting point for a project that has only scattered ideas, or examine how humans and AI already work together in an existing project. You do not need to understand its four internal modes first. Start from where your project is today.
+
+### Install
+
+If Node.js is installed locally, run:
+
+```bash
+npx skills add yhala2414/ai-collaboration-operating-system --skill project-collaboration-operating-system
+```
+
+> This command uses the general-purpose `skills` CLI to read the repository from GitHub, detect the AI agent you use, and install the skill. This project itself is not published as an npm package.
+
+You can also download the repository directly or clone it with Git:
+
+```bash
+git clone https://github.com/yhala2414/ai-collaboration-operating-system.git
+```
+
+Then copy the **entire directory** below from the repository into your AI tool's skills directory:
+
+```txt
+skills/project-collaboration-operating-system/
+```
+
+When copying manually, the installed directory should still contain `SKILL.md`, `references/`, and `templates/`. Skills directories vary between tools, so follow the documentation for the tool you use. After installation, reopen your AI tool or start a new session, then ask the agent to use `project-collaboration-operating-system`.
+
+If your tool does not support skills yet, you can still read [`SKILL.md`](skills/project-collaboration-operating-system/SKILL.md) directly and use it as a lightweight collaboration-system checklist.
+
+### If you are starting from scratch
+
+“From scratch” does not have to mean having nothing. You may already have ideas, chat logs, screenshots, drafts, or partial code, but no stable collaboration entrypoint. Give those materials to your agent and copy this prompt:
+
+```txt
+Use project-collaboration-operating-system to help me create a minimal,
+usable human-AI collaboration starting point for this project.
+
+First inspect the ideas, documents, and code I already have. Separate confirmed
+facts, tentative ideas, open questions, and things that are out of scope for now.
+Do not create a complete documentation suite by default. Explain what is actually
+missing and propose the smallest useful setup. Wait for my approval before editing files.
+```
+
+### If you already have a project
+
+If your project already has code, a README, collaboration guidance, or other documentation, but you are not sure whether the current system is clear, begin with a collaboration self-check:
+
+```txt
+Use project-collaboration-operating-system to examine how humans and AI
+currently collaborate in this project.
+
+I am not sure whether the existing collaboration guidance is clear or what is
+most worth improving first. Inspect the code, documentation, and current project
+stage, then explain the current collaboration state, the main risks, and the next
+step you recommend. Diagnose first and do not edit files.
+
+At the end, generate a copyable follow-up prompt based on what you found.
+```
+
+This check is not a project score, and it should not automatically add documentation. The agent will decide whether the project most needs an entrypoint, clearer existing rules, a focused improvement, or a retrospective on a real miss. If the current system is already sufficient, it should say so instead of adding process merely to look complete.
+
+### If you already know the problem
+
+You can also skip the broader self-check and describe the problem directly. For example:
+
+```txt
+AI agents often start working before reading enough project context. Use
+project-collaboration-operating-system to check the project entrypoint, reading order,
+and document authority. Diagnose the cause before adding any new documentation.
+```
+
+```txt
+Project rules are scattered across several documents, and I am not sure which ones
+are authoritative. Use project-collaboration-operating-system to find duplicated,
+conflicting, stale, or unclear guidance and recommend the smallest cleanup.
+```
+
+```txt
+A human-AI collaboration miss just happened. Use project-collaboration-operating-system
+to review it. First decide whether it was an execution miss or a problem in context,
+documentation, or process. Recommend changing collaboration rules only if the problem
+is systemic.
+```
+
+These are only common starting points. They do not depend on a particular stack, directory structure, or project stage. You can also describe your own situation and let the agent determine the most appropriate next step.
+
 ## 🛠️ What It Can Help With Today
 
 Even though the current version is still small, it can already be used as an initializer for a project's collaboration system. It is especially useful for:
@@ -114,22 +201,6 @@ If you are an experienced developer, you can help us judge which collaboration r
 If you do not have much engineering experience, your feedback is just as important. Try using AI to start or improve a project. Tell us what was confusing, what felt unusable, what made you more confident, and what still blocked you.
 
 You can also use this skill to initialize or improve your own project documentation system, run experiments, bring back the rough edges from real projects, open issues, add examples, improve the writing, or simply star the project to show that this direction is worth continuing.
-
-## 🚀 Getting Started
-
-If your AI tool supports skills, copy this directory into the relevant skills directory:
-
-```txt
-skills/project-collaboration-operating-system/
-```
-
-Then ask your agent to use the skill when you want to organize or improve a project's collaboration system, for example:
-
-```txt
-Use project-collaboration-operating-system to diagnose and improve this project's AI collaboration docs.
-```
-
-If your tool does not support skills yet, you can still read [`SKILL.md`](skills/project-collaboration-operating-system/SKILL.md) directly and use it as a lightweight collaboration-system checklist.
 
 ## ⭐ Star / Feedback / Contribute
 

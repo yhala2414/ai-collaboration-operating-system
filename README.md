@@ -22,6 +22,91 @@ skills/
 
 更具体的规则和使用方式都在 [`SKILL.md`](skills/project-collaboration-operating-system/SKILL.md) 里。`references/` 和 `templates/` 只是放一些案例、压力检查和可复制调用方式。README 不想把它们再讲一遍，只想说明这个项目为什么存在，以及我们希望它怎样继续长大。
 
+## 🚀 快速开始
+
+这个 skill 既可以帮一个只有零散想法的新项目建立最小协作起点，也可以检查一个已有项目的人与 AI 协作方式。你不需要先理解它的四种工作模式，只需要从自己现在所处的位置开始。
+
+### 安装
+
+如果本地已经安装了 Node.js，可以在终端运行：
+
+```bash
+npx skills add yhala2414/ai-collaboration-operating-system --skill project-collaboration-operating-system
+```
+
+> 这个命令会通过通用的 `skills` CLI 从 GitHub 读取仓库，识别你正在使用的 AI agent，并安装其中的 skill；本项目本身没有发布 npm 包。
+
+也可以直接下载仓库，或者使用 Git 克隆：
+
+```bash
+git clone https://github.com/yhala2414/ai-collaboration-operating-system.git
+```
+
+然后把仓库中的下面这个**完整目录**复制到 AI 工具的 skills 目录：
+
+```txt
+skills/project-collaboration-operating-system/
+```
+
+手动复制时，目标目录里应当保留 `SKILL.md`、`references/` 和 `templates/`。不同工具的 skills 目录可能不同，请以你所使用工具的说明为准。安装完成后，重新打开 AI 工具或开始一个新会话，然后让 agent 使用 `project-collaboration-operating-system`。
+
+如果你的工具暂时不支持 skills，也可以直接阅读 [`SKILL.md`](skills/project-collaboration-operating-system/SKILL.md)，把它当作一份轻量的协作体系检查清单。
+
+### 如果你正从零开始
+
+“从零”不一定是什么都没有。你可能已经有一些想法、聊天记录、截图、草稿或部分代码，只是还没有稳定的协作入口。可以把现有材料交给 agent，然后直接复制下面这段话：
+
+```txt
+请使用 project-collaboration-operating-system，
+帮助我为这个项目建立一个最小可用的人与 AI 协作起点。
+
+请先了解我已有的想法、文档和代码，区分已经确认的内容、
+暂时的想法、待确认的问题和当前不做的事情。
+不要默认创建一整套复杂文档；先说明现在真正缺少什么，
+并给出最小方案。得到我的确认后再修改文件。
+```
+
+### 如果你已经有一个项目
+
+如果项目里已经有代码、README、协作说明或其他文档，但你不确定当前体系是否清楚，可以先做一次协作自检：
+
+```txt
+请使用 project-collaboration-operating-system，
+检查这个项目目前的人与 AI 协作方式。
+
+我不确定现有协作约定是否清楚，也不知道最值得先改善什么。
+请先了解项目的代码、文档和当前阶段，说明当前协作现状、
+主要风险和建议的下一步。先进行检查，不要修改文件。
+
+最后，请根据检查结果，为我生成一条可以直接复制使用的下一步提示词。
+```
+
+这次检查不是为了给项目打分，也不要求固定增加文档。agent 会判断当前更需要建立入口、整理已有规则、改善一个具体问题，还是复盘一次已经发生的偏航；如果现有体系已经足够，它也应该明确说明不需要为了显得完整而增加流程。
+
+### 如果你已经知道问题在哪里
+
+你也可以不经过完整自检，直接描述正在发生的问题。例如：
+
+```txt
+AI 经常没有读完项目上下文就开始工作。请使用
+project-collaboration-operating-system 检查项目入口、阅读顺序和文档权威关系，
+先诊断原因，不要直接增加新文档。
+```
+
+```txt
+项目里的规则散落在不同文档中，我不确定哪些内容才算数。请使用
+project-collaboration-operating-system 检查重复、冲突、过期或权威不清的规则，
+并给出最小的整理建议。
+```
+
+```txt
+刚才发生了一次人与 AI 的协作偏航。请使用
+project-collaboration-operating-system 复盘这次问题，先判断它是执行失误，
+还是上下文、文档或流程本身存在问题；只有确认是系统性问题时，才建议修改协作规则。
+```
+
+这些例子只是常见起点，不与某种技术栈、目录结构或项目阶段绑定。你也可以直接用自己的话说明处境，让 agent 判断最合适的下一步。
+
 ## 🛠️ 现在它能帮什么
 
 即使现在仍然很轻，它也已经可以作为一个项目协作体系的初始化工具使用。它比较适合帮你做这些事：
@@ -114,22 +199,6 @@ skills/
 你也可以没有太多研发经验，只是想试着用 AI 做一个项目。你的体验同样重要：哪里看不懂，哪里用不上，哪里让你更有信心，哪里让你更困惑，这些反馈都会帮助这个 skill 变得更好。
 
 也欢迎用它初始化或改善你自己的项目文档体系，做实验，把真实项目里的不顺手带回来，提出 issue，补充例子，改写表达，或者只是 star 一下告诉我们这个方向值得继续。
-
-## 🚀 如何开始
-
-如果你的 AI 工具支持 skills，可以把下面这个目录复制到对应的 skills 目录中：
-
-```txt
-skills/project-collaboration-operating-system/
-```
-
-然后在需要整理项目协作体系时，让 agent 使用这个 skill，例如：
-
-```txt
-Use project-collaboration-operating-system to diagnose and improve this project's AI collaboration docs.
-```
-
-如果你的工具暂时不支持 skills，也可以直接阅读 [`SKILL.md`](skills/project-collaboration-operating-system/SKILL.md)，把它当作一份轻量的协作体系检查清单。
 
 ## ⭐ Star / 反馈 / 贡献
 
