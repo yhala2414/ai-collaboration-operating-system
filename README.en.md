@@ -26,7 +26,7 @@ The specific rules and usage details live in [`SKILL.md`](skills/project-collabo
 
 This skill can create a minimal collaboration starting point for a project that has only scattered ideas, or examine how humans and AI already work together in an existing project. You do not need to understand its four internal modes first. Start from where your project is today.
 
-### Install
+### 1 - Install the skill
 
 If Node.js is installed locally, run:
 
@@ -52,7 +52,9 @@ When copying manually, the installed directory should still contain `SKILL.md`, 
 
 If your tool does not support skills yet, you can still read [`SKILL.md`](skills/project-collaboration-operating-system/SKILL.md) directly and use it as a lightweight collaboration-system checklist.
 
-### If you are starting from scratch
+### 2 - Choose your starting point
+
+#### 🌱 Create a collaboration starting point from scratch
 
 “From scratch” does not have to mean having nothing. You may already have ideas, chat logs, screenshots, drafts, or partial code, but no stable collaboration entrypoint. Give those materials to your agent and copy this prompt:
 
@@ -66,7 +68,7 @@ Do not create a complete documentation suite by default. Explain what is actuall
 missing and propose the smallest useful setup. Wait for my approval before editing files.
 ```
 
-### If you already have a project
+#### 🔍 Check an existing project
 
 If your project already has code, a README, collaboration guidance, or other documentation, but you are not sure whether the current system is clear, begin with a collaboration self-check:
 
@@ -84,7 +86,7 @@ At the end, generate a copyable follow-up prompt based on what you found.
 
 This check is not a project score, and it should not automatically add documentation. The agent will decide whether the project most needs an entrypoint, clearer existing rules, a focused improvement, or a retrospective on a real miss. If the current system is already sufficient, it should say so instead of adding process merely to look complete.
 
-### If you already know the problem
+### 3 - Already know the problem? Start directly
 
 You can also skip the broader self-check and describe the problem directly. For example:
 
