@@ -54,7 +54,7 @@ If your tool does not support skills yet, you can still read [`SKILL.md`](skills
 
 ### 2 - Choose your starting point
 
-#### 🌱 Create a collaboration starting point from scratch
+#### 🌱 If you are starting from scratch
 
 “From scratch” does not have to mean having nothing. You may already have ideas, chat logs, screenshots, drafts, or partial code, but no stable collaboration entrypoint. Give those materials to your agent and copy this prompt:
 
@@ -68,7 +68,7 @@ Do not create a complete documentation suite by default. Explain what is actuall
 missing and propose the smallest useful setup. Wait for my approval before editing files.
 ```
 
-#### 🔍 Check an existing project
+#### 🔍 If you already have a project
 
 If your project already has code, a README, collaboration guidance, or other documentation, but you are not sure whether the current system is clear, begin with a collaboration self-check:
 
@@ -86,7 +86,7 @@ At the end, generate a copyable follow-up prompt based on what you found.
 
 This check is not a project score, and it should not automatically add documentation. The agent will decide whether the project most needs an entrypoint, clearer existing rules, a focused improvement, or a retrospective on a real miss. If the current system is already sufficient, it should say so instead of adding process merely to look complete.
 
-### 3 - Already know the problem? Start directly
+### 3 - If you already know where the problem is
 
 You can also skip the broader self-check and describe the problem directly. For example:
 
