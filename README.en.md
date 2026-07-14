@@ -24,6 +24,8 @@ The specific rules and usage details live in [`SKILL.md`](skills/project-collabo
 
 ## 🚀 Quick Start
 
+If you are using AI to build a project but its context, documentation, or collaboration process is starting to feel messy, you can start here.
+
 This skill can create a minimal collaboration starting point for a project that has only scattered ideas, or examine how humans and AI already work together in an existing project. You do not need to understand its four internal modes first. Start from where your project is today.
 
 ### 1 - Install the skill
@@ -50,7 +52,7 @@ skills/project-collaboration-operating-system/
 
 When copying manually, the installed directory should still contain `SKILL.md`, `references/`, and `templates/`. Skills directories vary between tools, so follow the documentation for the tool you use. After installation, reopen your AI tool or start a new session, then ask the agent to use `project-collaboration-operating-system`.
 
-If your tool does not support skills yet, you can still read [`SKILL.md`](skills/project-collaboration-operating-system/SKILL.md) directly and use it as a lightweight collaboration-system checklist.
+If your tool does not support skills yet, that is okay. You can give [`SKILL.md`](skills/project-collaboration-operating-system/SKILL.md) to your AI, then copy the prompt for the relevant scenario below to get started.
 
 ### 2 - Choose your starting point
 

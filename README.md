@@ -24,6 +24,8 @@ skills/
 
 ## 🚀 快速开始
 
+如果你正在用 AI 做项目，但感觉上下文、文档或协作方式开始变得混乱，可以从这里开始。
+
 这个 skill 既可以帮一个只有零散想法的新项目建立最小协作起点，也可以检查一个已有项目的人与 AI 协作方式。你不需要先理解它的四种工作模式，只需要从自己现在所处的位置开始。
 
 ### 1 - 安装这个 skill
@@ -50,7 +52,7 @@ skills/project-collaboration-operating-system/
 
 手动复制时，目标目录里应当保留 `SKILL.md`、`references/` 和 `templates/`。不同工具的 skills 目录可能不同，请以你所使用工具的说明为准。安装完成后，重新打开 AI 工具或开始一个新会话，然后让 agent 使用 `project-collaboration-operating-system`。
 
-如果你的工具暂时不支持 skills，也可以直接阅读 [`SKILL.md`](skills/project-collaboration-operating-system/SKILL.md)，把它当作一份轻量的协作体系检查清单。
+如果你的工具暂时不支持 skills，也没关系。你可以把 [`SKILL.md`](skills/project-collaboration-operating-system/SKILL.md) 提供给 AI，再复制下面对应场景的提示词开始使用。
 
 ### 2 - 选择你的起点
 
